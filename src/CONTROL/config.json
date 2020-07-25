@@ -1,0 +1,30 @@
+{
+  "general": {
+    "package": "hello-asustor-nas-webapp",
+    "name": "hello-asustor-nas-webapp",
+    "version": "1.0.0",
+    "depends": [],
+    "conflicts": [],
+    "developer": "ɯ̹t͡ɕʲi",
+    "maintainer": "ɯ̹t͡ɕʲi",
+    "email": "u@chimata.org",
+    "website": "https://github.com/c18t/hello-asustor-nas-webapp",
+    "architecture": "any",
+    "firmware": "2.1.0"
+  },
+  "adm-desktop": {
+    "app": {
+      "type": "webserver"
+    },
+    "privilege": {
+      "accessible": "users",
+      "customizable": true
+    }
+  },
+  "register": {
+    "port": ["54321"],
+    "prerequisites": {
+      "enable-service": ["httpd"]
+    }
+  }
+}
